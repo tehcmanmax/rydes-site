@@ -90,6 +90,7 @@ export default {
             alert('No Authorization token!')
         }else{
             this.authToken = Jwt
+            console.log(Jwt)
         }
         
   },
