@@ -186,6 +186,8 @@ var config = require('../config.js')
                     var pronoun;
                     unicorn = unicornResponse.Unicorn;
                     pronoun = unicorn.Gender === 'Male' ? 'his' : 'her';
+                    console.log('unicorn.Gender: ' + unicorn.Gender)
+                    console.log('unicornResponse: ' + unicornResponse.toJSON)
                     this.displayUpdate(unicorn.Name + ', your ' + unicorn.Color + ' unicorn, is on ' + pronoun + ' way.');
                     this.animateArrival(function animateCallback() {
                         self.displayUpdate(unicorn.Name + ' has arrived. Giddy up!');
