@@ -182,12 +182,12 @@ var config = require('../config.js')
                 },
                 completeRequest: function (unicornResponse) {
                     console.log('Response received from API: ', unicornResponse);
+                    console.log('unicorn.Gender: ' + unicorn.Gender)
+                    console.log('unicornResponse: ' + unicornResponse.toJSON)
                     var unicorn;
                     var pronoun;
                     unicorn = unicornResponse.Unicorn;
                     pronoun = unicorn.Gender === 'Male' ? 'his' : 'her';
-                    console.log('unicorn.Gender: ' + unicorn.Gender)
-                    console.log('unicornResponse: ' + unicornResponse.toJSON)
                     this.displayUpdate(unicorn.Name + ', your ' + unicorn.Color + ' unicorn, is on ' + pronoun + ' way.');
                     this.animateArrival(function animateCallback() {
                         self.displayUpdate(unicorn.Name + ' has arrived. Giddy up!');
