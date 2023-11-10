@@ -175,7 +175,7 @@ var config = require('../config.js')
                         })
                         .catch(function (error) {
                             // handle error
-                            console.error('map.vue Error requesting ride: ', error);
+                            console.error('from map.vue Error requesting ride: ', error);
                             alert('An error occured when requesting your unicorn:\n' + error);
                         })
 
@@ -187,7 +187,11 @@ var config = require('../config.js')
                     var unicorn;
                     var pronoun;
                     unicorn = unicornResponse.Unicorn;
-                    pronoun = unicorn.Gender === 'Male' ? 'his' : 'her';
+                    // pronoun = unicorn.Gender === 'Male' ? 'his' : 'her';
+                    pronoun = unicornResponse.Gender === 'Male' ? 'his' : 'her';
+                    console.log('resonse: unicornResponse.Gender ' + unicornResponse.Gender)
+                    console.log('resonse: unicornResponse.Gender json: ' + unicornResponse.Gender.toJSON)
+                    console.log('resonse: unicornResponse ' + unicornResponse.toJSON)
                     this.displayUpdate(unicorn.Name + ', your ' + unicorn.Color + ' unicorn, is on ' + pronoun + ' way.');
                     this.animateArrival(function animateCallback() {
                         self.displayUpdate(unicorn.Name + ' has arrived. Giddy up!');
