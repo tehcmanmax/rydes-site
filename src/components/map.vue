@@ -181,8 +181,8 @@ var config = require('../config.js')
 
                 },
                 completeRequest: function (unicornResponse) {
-                    // console.log('Response received from API: ', unicornResponse);
-                    console.log('unicorn.Gender: ' + unicorn.Gender)
+                    console.log('Response received from API: ', unicornResponse); //last time when it outputs
+                    console.log('unicorn.Gender: ' + unicorn.Gender) //here it stops outputting
                     console.log('unicornResponse: ' + unicornResponse.toJSON)
                     var unicorn;
                     var pronoun;
