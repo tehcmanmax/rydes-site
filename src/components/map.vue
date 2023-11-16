@@ -190,8 +190,8 @@ var config = require('../config.js')
                     console.log('after unicornResponse.Unicorn')
 
                     console.log('unicorn.Gender: ' + unicorn.Gender) //here it stops outputting
-                    // pronoun = unicorn.Gender === 'Male' ? 'his' : 'her';
-                    pronoun = unicornResponse.Gender === 'Male' ? 'his' : 'her';
+                    pronoun = unicorn.Gender === 'Male' ? 'his' : 'her';
+                    // pronoun = unicornResponse.Gender === 'Male' ? 'his' : 'her';
                     console.log('response: unicornResponse.Gender ' + unicornResponse.Gender)
                     console.log('response: unicornResponse.Gender json: ' + unicornResponse.Gender.toJSON)
                     console.log('response: unicornResponse ' + unicornResponse.toJSON)
