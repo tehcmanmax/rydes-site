@@ -34,7 +34,7 @@ var config = require('../config.js')
 
                     // and we show that map in a container id #viewDiv
                      var view = new MapView({
-                        center: [17.36907637216129, 3.544556160530588],
+                        center: [8.582635996054155, 47.39],
                         container: 'viewDiv',
                         map: self.webmap,
                         zoom: 12
