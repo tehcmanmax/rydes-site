@@ -1,4 +1,4 @@
-# wildrydes
+# rydes-site
 
 A rebuild of the serverless website WildRydes Workshop in Vue.js with AWS Amplify CLI.  
 Elevating transportation to a magical realm. Summon enchanted unicorns for swift and enchanting journeys. Your commute, reimagined. 🦄✨ <sub>Inspired by Uber taxi</sub>
